@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9679A52F-1B73-1E28-0488-692BEA3E8D5E" name="BIN">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-28 10:13:32 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DF9263F2-DBF0-60E6-B701-13BC5D5F6235" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="bin_RFID" id="A1122E9B-928B-798C-DBFF-6995F62508BE">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-28 10:13:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin RFID]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DF9263F2-DBF0-60E6-B701-13BC5D5F6235" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bin_supply_date" id="1D28AE15-B2DA-A47B-AD4A-E7204D0A758D">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-28 10:14:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin supply date]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DF9263F2-DBF0-60E6-B701-13BC5D5F6235" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bin_replacement_reason" id="0E0CF2F1-B120-ADD7-178E-1A3CE01E63DD">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-28 10:15:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin replacement reason (BF - bin failure, DO - damaged by owner, DW - damaged during waste pickup, S - Stolen) ]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DF9263F2-DBF0-60E6-B701-13BC5D5F6235" value="true"/>
+</engineerTo>
+<constraintName>chk_bin_replacement_reason</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<listOfValues>
+<valueDef value="BF" description="Bin Failure (fair use, e.g. old age)"/>
+<valueDef value="DO" description="Damaged by owner"/>
+<valueDef value="DW" description="Damaged during pickup of waste"/>
+<valueDef value="S" description="Stolen"/>
+</listOfValues>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bin_size" id="1B3D384D-F0AB-3F38-6AA1-DE5D94A77F9A">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-28 10:30:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin size ]]></commentInRDBMS>
+<generatorID>7C3D1FC4-AED5-B860-E96E-B2F392EA6478</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DF9263F2-DBF0-60E6-B701-13BC5D5F6235" value="true"/>
+</engineerTo>
+<referedAttribute>A3E74931-3D7E-982A-D131-995137E8012C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prop_id" id="738B4792-5A17-68D0-404D-FC0B40B8EA50">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-28 11:08:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[surrogate key of property]]></commentInRDBMS>
+<generatorID>8661EF0C-2B3B-5DB3-063E-FDFDCD8BB331</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DF9263F2-DBF0-60E6-B701-13BC5D5F6235" value="true"/>
+</engineerTo>
+<referedAttribute>3659C2EE-2D53-8DA2-F38D-697342EF5040</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="waste_type_id" id="24D70833-22C1-4748-7739-E688CE73FAF8">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-28 13:55:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[waste type ID]]></commentInRDBMS>
+<generatorID>7C3D1FC4-AED5-B860-E96E-B2F392EA6478</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DF9263F2-DBF0-60E6-B701-13BC5D5F6235" value="true"/>
+</engineerTo>
+<referedAttribute>E6CB3871-F866-1DFA-31C4-EF63BE46CBF0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="46FD31E2-6963-98E4-E1D3-B63E598ADF8A" name="BIN PK">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-28 10:14:11 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="DF9263F2-DBF0-60E6-B701-13BC5D5F6235" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A1122E9B-928B-798C-DBFF-6995F62508BE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EF0E01E9-0F09-6CE3-2B30-5D9EC2FFD842" name="COLLECTION">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-28 13:34:52 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DF9263F2-DBF0-60E6-B701-13BC5D5F6235" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="collection_no" id="19BED58E-2C25-D9E3-F7FE-67A6FD5350D8">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-28 14:55:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[collection number]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DF9263F2-DBF0-60E6-B701-13BC5D5F6235" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="collection_date" id="8F46769C-2888-2474-124B-6589DE5EF514">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-28 13:35:03 UTC</createdTime>
+<commentInRDBMS><![CDATA[collection date]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DF9263F2-DBF0-60E6-B701-13BC5D5F6235" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contract_no" id="92910ECE-1EA7-7AD7-4BD9-53E28ED0925B">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-28 14:28:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[contract number]]></commentInRDBMS>
+<generatorID>0AB832AE-3194-0E5E-9AD2-7E29EDAC8EB6</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DF9263F2-DBF0-60E6-B701-13BC5D5F6235" value="true"/>
+</engineerTo>
+<referedAttribute>625E1A3B-10EC-B72B-6251-090E56015E6F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="waste_type_id" id="8D51E93C-7EF5-38D2-0DE9-94E50CEBE199">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-28 14:28:19 UTC</createdTime>
+<commentInRDBMS><![CDATA[waste type ID]]></commentInRDBMS>
+<generatorID>0AB832AE-3194-0E5E-9AD2-7E29EDAC8EB6</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DF9263F2-DBF0-60E6-B701-13BC5D5F6235" value="true"/>
+</engineerTo>
+<referedAttribute>CE2EB609-D9DD-1F84-478A-A627927EAFE2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="truck_vin" id="E0F44A54-6DF4-08F8-980D-E87DDC3C0680">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-28 13:36:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[truck vehicle identification number]]></commentInRDBMS>
+<generatorID>B429F2FA-E4AF-854F-08A5-124E21C022DB</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DF9263F2-DBF0-60E6-B701-13BC5D5F6235" value="true"/>
+</engineerTo>
+<referedAttribute>B93FE56D-E687-F394-8F60-9EF30B76D7A5</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>17</dataTypeSize>
+<ownDataTypeParameters>17,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="driver_no" id="0CA79972-700F-7122-7AD9-08CD3CB2E4DA">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-28 13:36:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[driver number]]></commentInRDBMS>
+<generatorID>B429F2FA-E4AF-854F-08A5-124E21C022DB</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DF9263F2-DBF0-60E6-B701-13BC5D5F6235" value="true"/>
+</engineerTo>
+<referedAttribute>4F74A919-9D00-4536-2F9C-483E03871972</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="807DFDDF-89EB-2E62-160D-95FDA0526C62" name="COLLECTION PK">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-28 13:36:14 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="DF9263F2-DBF0-60E6-B701-13BC5D5F6235" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>19BED58E-2C25-D9E3-F7FE-67A6FD5350D8</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="29A8ED54-E055-5D88-74AE-BD52201E88BA" name="COLLECTION_NK">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-28 23:45:05 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="DF9263F2-DBF0-60E6-B701-13BC5D5F6235" value="false"/>
+</engineerTo>
+<newElementsIDs>8F46769C-2888-2474-124B-6589DE5EF514,92910ECE-1EA7-7AD7-4BD9-53E28ED0925B,8D51E93C-7EF5-38D2-0DE9-94E50CEBE199</newElementsIDs>
+<usedAttributes>
+<attributeRef>8F46769C-2888-2474-124B-6589DE5EF514</attributeRef>
+<attributeRef>92910ECE-1EA7-7AD7-4BD9-53E28ED0925B</attributeRef>
+<attributeRef>8D51E93C-7EF5-38D2-0DE9-94E50CEBE199</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

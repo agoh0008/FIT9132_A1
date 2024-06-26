@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="64796272-4DA3-9E0F-66CA-7047A9DDF2D8" name="CON_WT_CHARGE">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 01:31:27 UTC</createdTime>
+<generatorID>A875D257-298D-3906-C22A-84E7C58FB71D</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="contract_no" id="1561D0B1-23BC-B171-293C-2570599CD194">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 01:31:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[contract number]]></commentInRDBMS>
+<generatorID>625E1A3B-10EC-B72B-6251-090E56015E6F</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C35E0A5F-1563-4991-9B4C-5BDFEC15EFD7" referredColumn="3BE5159E-64C8-47AC-F11B-3844F1DEE840"/>
+</associations>
+</Column>
+<Column name="waste_type_id" id="1A5B7253-F0A4-5A3B-ED8B-56065BF4F9FC">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 01:31:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[waste type ID]]></commentInRDBMS>
+<generatorID>CE2EB609-D9DD-1F84-478A-A627927EAFE2</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="368BD13D-C6DD-9AFF-0464-DDBA019A6469" referredColumn="5CE94D1E-67F1-65AE-D64E-99629435EDE7"/>
+</associations>
+</Column>
+<Column name="waste_collection_cost" id="FF70D986-94F0-CE71-DE41-F63FF52B418D">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 01:31:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[waste collection cost]]></commentInRDBMS>
+<generatorID>8003189E-02DB-8B5C-197E-7F6415212362</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="waste_collection_freq" id="4375CA0C-C894-11FA-D74C-E5DFF762A55A">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 01:31:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[waste collection frequency (W - weekly, F - fortnightly, M - monthly)]]></commentInRDBMS>
+<generatorID>1D0E9FE9-27E2-C205-83A0-4340A7B52DDB</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<constraintName>chk_waste_collection_freq</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<listOfValues>
+<valueDef value="F" description="fortnightly"/>
+<valueDef value="M" description="monthly"/>
+<valueDef value="W" description="weekly"/>
+</listOfValues>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B119CC41-9CF4-21CD-654E-C6CC618CC85F" name="CON_WT_CHARGE_PK">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 01:31:27 UTC</createdTime>
+<generatorID>2A5008DB-FEDB-C459-B6CA-3FD9CA8F68D1</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1561D0B1-23BC-B171-293C-2570599CD194"/>
+<colUsage columnID="1A5B7253-F0A4-5A3B-ED8B-56065BF4F9FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6E26156B-4383-252C-F7B7-12342C6225E8" name="con_wastecharge">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 01:31:27 UTC</createdTime>
+<generatorID>15BB84C3-D96B-3F96-DDD6-FB1BEEBC666D</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1561D0B1-23BC-B171-293C-2570599CD194"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1D607581-6110-7640-C4E7-0A015CE28712" name="wastetype_wastecharge">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 01:31:27 UTC</createdTime>
+<generatorID>DC49CDF1-75AA-0BEA-493C-A4839F8E8E05</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1A5B7253-F0A4-5A3B-ED8B-56065BF4F9FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

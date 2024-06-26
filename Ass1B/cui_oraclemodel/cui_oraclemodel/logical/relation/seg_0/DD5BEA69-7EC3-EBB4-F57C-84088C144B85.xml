@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="auth_con" directorySegmentName="seg_0" id="DD5BEA69-7EC3-EBB4-F57C-84088C144B85">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-28 10:37:22 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FEC4A524-8F7D-AD0B-0590-A93A4AC1F9A4" value="true"/>
+</engineerTo>
+<sourcePk>26FB2E65-32B8-2F1A-048B-C48E2B0804DA</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>signs</nameOnSource>
+<nameOnTarget>.</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>714D97AF-22D6-4183-B8C9-C93F4BCCD65C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>89647E2D-7A2F-6F16-DD8F-D1D54C481DE4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

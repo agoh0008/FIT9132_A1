@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7C16B8E3-D7AE-991F-766D-0110932A45C2" name="DRIVER_TRUCK">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<generatorID>FCA8ACE8-273E-BC3D-8833-90E135AF6656</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="truck_vin" id="436E1C6A-36B6-3D8A-3BB0-A12FD0DF13E0">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[truck vehicle identification number]]></commentInRDBMS>
+<generatorID>B93FE56D-E687-F394-8F60-9EF30B76D7A5</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>17</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="51AF73A1-8835-1CFE-E278-2F5C8548E7B7" referredColumn="4F2ABBE3-E2A6-269A-CF83-A9A7A15DF49B"/>
+</associations>
+</Column>
+<Column name="driver_no" id="8B6BB38F-6297-2721-7884-DB168F8EFB6E">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[driver number]]></commentInRDBMS>
+<generatorID>4F74A919-9D00-4536-2F9C-483E03871972</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="717CD566-AE6D-220A-5DBB-DB56E17C05CC" referredColumn="2418BA13-F72B-8C90-B675-569E45BF918C"/>
+</associations>
+</Column>
+<Column name="driver_approval_date" id="EC021A73-C909-B6EB-CF71-885456FCB2C3">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[driver approval date]]></commentInRDBMS>
+<generatorID>33B60412-2EE2-8F5B-6EE0-A34BF8712B3D</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="336530DF-5513-9BE3-45E8-313A8B2B37FF" name="DRIVER_TRUCK_PK">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<generatorID>8B25F7CF-5EED-1780-B573-2EC71DCA2F58</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="436E1C6A-36B6-3D8A-3BB0-A12FD0DF13E0"/>
+<colUsage columnID="8B6BB38F-6297-2721-7884-DB168F8EFB6E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="430AF023-40D5-BC91-2708-8DA3DB76ABEB" name="driver_truck">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<generatorID>0FC6EB64-39B2-418A-6591-D5808DB7F898</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8B6BB38F-6297-2721-7884-DB168F8EFB6E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A608F45A-70DF-805F-23CC-99822767AAB8" name="truck_driver">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<generatorID>05CFCC7E-E693-B1C8-F2E7-9D6A09841F78</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="436E1C6A-36B6-3D8A-3BB0-A12FD0DF13E0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

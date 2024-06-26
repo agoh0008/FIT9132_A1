@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="wastetype_wastecharge" directorySegmentName="seg_0" id="DC49CDF1-75AA-0BEA-493C-A4839F8E8E05">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-28 14:06:08 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FEC4A524-8F7D-AD0B-0590-A93A4AC1F9A4" value="true"/>
+</engineerTo>
+<sourcePk>44F9C816-DE44-E716-9190-039634A54AA5</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>costs</nameOnSource>
+<nameOnTarget>.</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3C02F359-38FF-0D53-9C5A-05357F2057AC</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A875D257-298D-3906-C22A-84E7C58FB71D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

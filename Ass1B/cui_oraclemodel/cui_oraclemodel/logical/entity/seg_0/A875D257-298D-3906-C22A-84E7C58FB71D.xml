@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A875D257-298D-3906-C22A-84E7C58FB71D" name="CON_WT_CHARGE">
+<createdBy>Bolin</createdBy>
+<createdTime>2023-04-24 15:41:15 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DF9263F2-DBF0-60E6-B701-13BC5D5F6235" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="contract_no" id="625E1A3B-10EC-B72B-6251-090E56015E6F">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-28 10:42:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[contract number]]></commentInRDBMS>
+<generatorID>15BB84C3-D96B-3F96-DDD6-FB1BEEBC666D</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DF9263F2-DBF0-60E6-B701-13BC5D5F6235" value="true"/>
+</engineerTo>
+<referedAttribute>65CDC8CD-E2A9-9E18-27F8-FCD5CD7A9FCD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="waste_type_id" id="CE2EB609-D9DD-1F84-478A-A627927EAFE2">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-28 14:06:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[waste type ID]]></commentInRDBMS>
+<generatorID>DC49CDF1-75AA-0BEA-493C-A4839F8E8E05</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DF9263F2-DBF0-60E6-B701-13BC5D5F6235" value="true"/>
+</engineerTo>
+<referedAttribute>12F81996-F6A6-9E00-34B4-A0D28B279521</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="waste_collection_cost" id="8003189E-02DB-8B5C-197E-7F6415212362">
+<createdBy>Bolin</createdBy>
+<createdTime>2023-04-24 15:41:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[waste collection cost]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DF9263F2-DBF0-60E6-B701-13BC5D5F6235" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="waste_collection_freq" id="1D0E9FE9-27E2-C205-83A0-4340A7B52DDB">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-28 14:26:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[waste collection frequency (W - weekly, F - fortnightly, M - monthly)]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DF9263F2-DBF0-60E6-B701-13BC5D5F6235" value="true"/>
+</engineerTo>
+<constraintName>chk_waste_collection_freq</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11</dataTypeSize>
+<listOfValues>
+<valueDef value="F" description="fortnightly"/>
+<valueDef value="M" description="monthly"/>
+<valueDef value="W" description="weekly"/>
+</listOfValues>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2A5008DB-FEDB-C459-B6CA-3FD9CA8F68D1" name="CON_WT_CHARGE PK">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-28 10:41:23 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="DF9263F2-DBF0-60E6-B701-13BC5D5F6235" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>625E1A3B-10EC-B72B-6251-090E56015E6F</attributeRef>
+<attributeRef>CE2EB609-D9DD-1F84-478A-A627927EAFE2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

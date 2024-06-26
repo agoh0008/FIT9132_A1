@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="296510CA-2F36-1B2D-3A7D-24226BCFE690" name="BIN_COLLECTION">
+<createdBy>Bolin</createdBy>
+<createdTime>2023-04-24 15:51:40 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DF9263F2-DBF0-60E6-B701-13BC5D5F6235" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="bin_RFID" id="22D7DB84-F39B-76C1-85B0-8A75A080D181">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-28 10:56:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin RFID]]></commentInRDBMS>
+<generatorID>75241BA7-42AF-DFDC-BD14-8685E715893C</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DF9263F2-DBF0-60E6-B701-13BC5D5F6235" value="true"/>
+</engineerTo>
+<referedAttribute>A1122E9B-928B-798C-DBFF-6995F62508BE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="collection_no" id="FF5AE2A5-3AB3-BE02-268C-97BA4BF55A2A">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-28 14:55:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[collection number]]></commentInRDBMS>
+<generatorID>09B9DD32-867E-6032-B958-8DE1E3968B12</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DF9263F2-DBF0-60E6-B701-13BC5D5F6235" value="true"/>
+</engineerTo>
+<referedAttribute>19BED58E-2C25-D9E3-F7FE-67A6FD5350D8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bin_collection_weight" id="29DFA4E5-F3F9-5D1E-4FB1-1316D5371FB2">
+<createdBy>Bolin</createdBy>
+<createdTime>2023-04-24 15:51:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin collection weight]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DF9263F2-DBF0-60E6-B701-13BC5D5F6235" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bin_overweight" id="1C682D3E-ECDF-6831-A1C8-FA9C2DED0EF0">
+<createdBy>Bolin</createdBy>
+<createdTime>2023-04-24 15:52:26 UTC</createdTime>
+<commentInRDBMS><![CDATA[if bin is overweight (Y/N)]]></commentInRDBMS>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="DF9263F2-DBF0-60E6-B701-13BC5D5F6235" value="true"/>
+</engineerTo>
+<constraintName>chk_bin_overweight</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="No"/>
+<valueDef value="Y" description="Yes"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="97AF5F34-14E3-9B99-103B-C40FCFE677ED" name="BIN_COLLECTION PK">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-28 10:55:04 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="DF9263F2-DBF0-60E6-B701-13BC5D5F6235" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>22D7DB84-F39B-76C1-85B0-8A75A080D181</attributeRef>
+<attributeRef>FF5AE2A5-3AB3-BE02-268C-97BA4BF55A2A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

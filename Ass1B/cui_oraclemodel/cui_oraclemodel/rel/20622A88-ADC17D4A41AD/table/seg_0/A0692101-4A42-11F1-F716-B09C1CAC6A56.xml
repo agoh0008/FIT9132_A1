@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A0692101-4A42-11F1-F716-B09C1CAC6A56" name="WASTE_TYPE">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<generatorID>3C02F359-38FF-0D53-9C5A-05357F2057AC</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="waste_type_id" id="84AF5D3C-F156-1F7E-7F33-01CE1DB34928">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[waste type ID]]></commentInRDBMS>
+<generatorID>12F81996-F6A6-9E00-34B4-A0D28B279521</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="waste_cat_id" id="D7BD68D5-495A-9901-6763-7CA555A3CCAF">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[waste type category ID]]></commentInRDBMS>
+<generatorID>C9B801E4-F5FC-FB96-85FA-2F68BD6BFF32</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AFBEF988-A9D0-9CA0-8574-184FD10B4994" referredColumn="382780D0-B1A7-2443-F32F-1C1F606F7C92"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="76C0BB70-9762-2679-6384-C1B8E694EAB2" name="WASTE_TYPE_PK">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<generatorID>44F9C816-DE44-E716-9190-039634A54AA5</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="84AF5D3C-F156-1F7E-7F33-01CE1DB34928"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="04FFF562-90D3-2A7E-F648-5A39C347DA4A" name="wastetype_wastecat">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<generatorID>E79A9A11-9D18-D144-6CDE-D42F379B07E0</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D7BD68D5-495A-9901-6763-7CA555A3CCAF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

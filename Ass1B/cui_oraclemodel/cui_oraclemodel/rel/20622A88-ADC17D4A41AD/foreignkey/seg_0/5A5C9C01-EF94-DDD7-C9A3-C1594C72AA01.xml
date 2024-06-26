@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5A5C9C01-EF94-DDD7-C9A3-C1594C72AA01" containerWithKeyObject="4A2D8C59-0B41-FF26-ABED-785C161A1E37" localFKIndex="5D2090AE-E40D-3AC3-8273-609594504683" name="auth_con">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<generatorID>DD5BEA69-7EC3-EBB4-F57C-84088C144B85</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<referredTableLongName>AUTHORITY</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>DCEED6AA-B191-55CC-FBE3-2BDA2C89A064</referredTableID>
+<keyObject>A64B23F5-DD5D-77C5-DAC5-A974C11CDB85</keyObject>
+<referredKeyID>A64B23F5-DD5D-77C5-DAC5-A974C11CDB85</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>au_name</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5C0EFD4E-964F-3FE8-4BD2-40621CB25597" name="Owner">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 01:31:27 UTC</createdTime>
+<generatorID>BFA83A32-7647-2137-FFAE-5005135F56A4</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="owner_id" id="B1FC4A4E-E342-7244-0082-E750698DBD96">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 01:31:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Owner ID]]></commentInRDBMS>
+<generatorID>8FAA6D4E-AF36-86F9-896D-33B0E2217D90</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="owner_givname" id="4030825D-982C-2020-24F1-0A2B8AEE69CA">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 01:31:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Owner Given Name]]></commentInRDBMS>
+<generatorID>FAD5611C-9904-BDDE-B3BD-8F42495AC3CF</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="owner_famname" id="2F73DF83-6371-736A-7DF8-B81F4E3301F9">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 01:31:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Owner Family Name]]></commentInRDBMS>
+<generatorID>9B3A3442-6F6D-8958-E19D-317810011A17</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="owner_email" id="4A1DCAAE-5900-0AE5-8C8D-D6F3C3F4B904">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 01:31:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Owner Email]]></commentInRDBMS>
+<generatorID>D67DE12A-EF1D-6C4F-3749-04F8DD5264D3</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="owner_phone" id="D03C26A7-5954-1909-C794-B4BBB6571444">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 01:31:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Owner Phone Number]]></commentInRDBMS>
+<generatorID>5329E4F6-EA05-489E-295F-4CB429B804BD</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="856613B0-DECF-1CB8-81AB-435AC604F12C" name="Owner_PK">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 01:31:27 UTC</createdTime>
+<generatorID>65FEAF2F-3CB4-139D-1F4F-3898A19D7E8B</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B1FC4A4E-E342-7244-0082-E750698DBD96"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

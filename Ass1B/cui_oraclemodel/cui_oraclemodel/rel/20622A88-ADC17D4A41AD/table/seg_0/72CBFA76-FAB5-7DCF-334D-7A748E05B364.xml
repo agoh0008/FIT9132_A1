@@ -1,0 +1,146 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="72CBFA76-FAB5-7DCF-334D-7A748E05B364" name="BIN">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<generatorID>9679A52F-1B73-1E28-0488-692BEA3E8D5E</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="bin_RFID" id="4D9F1188-1EDC-8767-705F-C2735B5E3889">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin RFID]]></commentInRDBMS>
+<generatorID>A1122E9B-928B-798C-DBFF-6995F62508BE</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>16,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bin_supply_date" id="A1CDDC0F-8AAF-F8E2-ADF0-C350705B2E93">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin supply date]]></commentInRDBMS>
+<generatorID>1D28AE15-B2DA-A47B-AD4A-E7204D0A758D</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bin_replacement_reason" id="302FA88E-FE08-7A82-CE79-D69CEAD42328">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin replacement reason, BF - bin failure, DO - damaged by owner, DW - damaged during waste pickup, S - Stolen ]]></commentInRDBMS>
+<generatorID>0E0CF2F1-B120-ADD7-178E-1A3CE01E63DD</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<constraintName>chk_bin_replacement_reason</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<listOfValues>
+<valueDef value="BF" description="Bin Failure (fair use, e.g. old age)"/>
+<valueDef value="DO" description="Damaged by owner"/>
+<valueDef value="DW" description="Damaged during pickup of waste"/>
+<valueDef value="S" description="Stolen"/>
+</listOfValues>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bin_size" id="77F28802-57A9-2EEC-8475-75206E971544">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin size ]]></commentInRDBMS>
+<generatorID>1B3D384D-F0AB-3F38-6AA1-DE5D94A77F9A</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2C2D5619-45CA-5D42-6783-F92E39667200" referredColumn="3DBD49C1-5D9F-5BD4-A8D4-79A74DBFAD01"/>
+</associations>
+</Column>
+<Column name="prop_id" id="211CA02D-5207-8DC8-3F5D-9D4CCC15BDA8">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[surrogate key of property]]></commentInRDBMS>
+<generatorID>738B4792-5A17-68D0-404D-FC0B40B8EA50</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="314B3B1E-D46C-A7C2-7901-4A25C9B951F1" referredColumn="FD918257-AB5F-5B98-6D3F-5F549B80D7B0"/>
+</associations>
+</Column>
+<Column name="waste_type_id" id="DE6D9070-6996-8D66-C5DD-6CE7A8EF8273">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[waste type ID]]></commentInRDBMS>
+<generatorID>24D70833-22C1-4748-7739-E688CE73FAF8</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2C2D5619-45CA-5D42-6783-F92E39667200" referredColumn="CA75B186-341A-50C9-C858-2B81B91A514F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F29707F7-2CCA-170E-AE3D-4AA97A503BCF" name="BIN_PK">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<generatorID>46FD31E2-6963-98E4-E1D3-B63E598ADF8A</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4D9F1188-1EDC-8767-705F-C2735B5E3889"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0C292EE4-1213-F47E-D4BE-D7C1806546F7" name="bintype_bin">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<generatorID>7C3D1FC4-AED5-B860-E96E-B2F392EA6478</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="77F28802-57A9-2EEC-8475-75206E971544"/>
+<colUsage columnID="DE6D9070-6996-8D66-C5DD-6CE7A8EF8273"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5C21041D-EBD5-382E-5D0B-1A493563A975" name="prop_bin">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<generatorID>8661EF0C-2B3B-5DB3-063E-FDFDCD8BB331</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="211CA02D-5207-8DC8-3F5D-9D4CCC15BDA8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

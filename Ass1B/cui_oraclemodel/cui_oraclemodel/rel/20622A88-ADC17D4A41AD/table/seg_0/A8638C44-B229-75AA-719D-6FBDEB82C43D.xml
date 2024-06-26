@@ -1,0 +1,127 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A8638C44-B229-75AA-719D-6FBDEB82C43D" name="STREET">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<generatorID>95FC747E-435E-1696-A0B9-D5773B42DBC6</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="street_id" id="04873BBA-FF9E-5055-EC1A-EF8ECCAD071D">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Street ID]]></commentInRDBMS>
+<generatorID>79C47BCB-CA49-915D-6923-C1798E7F6FBD</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="au_name" id="6D9BF7DE-68FF-836E-F371-8FA9EC881EE8">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Authority Name]]></commentInRDBMS>
+<generatorID>FC34BA81-5619-82CA-2D5C-4882481FDCB6</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4AE35058-899A-9982-A316-B29894CB8D8D" referredColumn="59F96506-759A-7876-45D5-B9AFB24BD18B"/>
+</associations>
+</Column>
+<Column name="street_name" id="7EC038CA-A771-127F-E6C3-DC75DB44F06F">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Street Name]]></commentInRDBMS>
+<generatorID>086F8FBB-3C56-5689-C1DC-FA4F8E78B1C0</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="street_length" id="9353AF41-4B88-AED9-8132-32F884B1D6A7">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Street  Length]]></commentInRDBMS>
+<generatorID>4E0DA678-07EC-930A-C107-2DE05D7AC2C3</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="street_road_type" id="C301D9A5-077B-AD3E-0118-242F57B5CF59">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Street Road Type, A - Asphalt, C - Concrete, U - Unsealed]]></commentInRDBMS>
+<generatorID>79EDFCC4-F4C8-3308-01E1-3E221A7C03A9</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<constraintName>chk_street_road_type</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<listOfValues>
+<valueDef value="A" description="Asphalt"/>
+<valueDef value="C" description="Concrete"/>
+<valueDef value="U" description="Unsealed"/>
+</listOfValues>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="street_lane_no" id="7A7B9F68-CA6D-1531-2B50-5C0035463435">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Street Lane Number]]></commentInRDBMS>
+<generatorID>67EB40D7-53AD-1B98-5173-DEF98C61AC1D</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="07526FEE-FC8D-AB1B-17D7-266F0CD88D69" name="STREET_PK">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<generatorID>4E32C3C2-486D-9474-EC78-CC172C0DE007</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04873BBA-FF9E-5055-EC1A-EF8ECCAD071D"/>
+<colUsage columnID="6D9BF7DE-68FF-836E-F371-8FA9EC881EE8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C5F039AB-FD2B-8284-6B24-ADFB6BBA4F7F" name="auth_street">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<generatorID>8F638077-4C1F-55B4-9DC4-F9C9C40BF602</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D9BF7DE-68FF-836E-F371-8FA9EC881EE8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

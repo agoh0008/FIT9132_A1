@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="con_bincharge" directorySegmentName="seg_0" id="D254CF59-4602-7BD0-0031-CD8F76B0C89D">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-28 10:39:40 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FEC4A524-8F7D-AD0B-0590-A93A4AC1F9A4" value="true"/>
+</engineerTo>
+<sourcePk>0CE6B83B-2A7B-9376-0269-DAE795E0852D</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>sets</nameOnSource>
+<nameOnTarget>.</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>89647E2D-7A2F-6F16-DD8F-D1D54C481DE4</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FB0AC473-F03F-7681-465D-F2DA96CC9FAC</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

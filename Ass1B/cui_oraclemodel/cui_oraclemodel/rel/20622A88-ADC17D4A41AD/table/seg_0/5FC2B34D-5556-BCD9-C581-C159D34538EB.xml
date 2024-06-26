@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5FC2B34D-5556-BCD9-C581-C159D34538EB" name="BIN_COLLECTION">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<generatorID>296510CA-2F36-1B2D-3A7D-24226BCFE690</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="bin_RFID" id="E196B25D-F75B-073C-8199-8DEF8D349F7F">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin RFID]]></commentInRDBMS>
+<generatorID>22D7DB84-F39B-76C1-85B0-8A75A080D181</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>16</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="15910B8E-01FB-1766-3A9F-B229CE1969E3" referredColumn="4D9F1188-1EDC-8767-705F-C2735B5E3889"/>
+</associations>
+</Column>
+<Column name="collection_no" id="407E27B6-7B93-567E-6A04-970EC134E838">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[collection number]]></commentInRDBMS>
+<generatorID>FF5AE2A5-3AB3-BE02-268C-97BA4BF55A2A</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0BB8A17A-31D1-CB23-AB26-63FFE4D0A706" referredColumn="871EF26A-54CC-4C3E-C90F-591377B11A15"/>
+</associations>
+</Column>
+<Column name="bin_collection_weight" id="6D8C5D12-7A2A-A781-E2BC-46F7A5D67A33">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[bin collection weight]]></commentInRDBMS>
+<generatorID>29DFA4E5-F3F9-5D1E-4FB1-1316D5371FB2</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bin_overweight" id="5192BE1A-1960-F686-9874-68D6BBABD16D">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[if bin is overweight (Y/N)]]></commentInRDBMS>
+<generatorID>1C682D3E-ECDF-6831-A1C8-FA9C2DED0EF0</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<constraintName>chk_bin_overweight</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="N" description="No"/>
+<valueDef value="Y" description="Yes"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F370B13B-69A0-4642-8A9A-7F615ECB6318" name="BIN_COLLECTION_PK">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<generatorID>97AF5F34-14E3-9B99-103B-C40FCFE677ED</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E196B25D-F75B-073C-8199-8DEF8D349F7F"/>
+<colUsage columnID="407E27B6-7B93-567E-6A04-970EC134E838"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ED0B0CA0-F472-C333-8E8D-FE19F2C0072E" name="bin_collection">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<generatorID>75241BA7-42AF-DFDC-BD14-8685E715893C</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E196B25D-F75B-073C-8199-8DEF8D349F7F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5F3C9D26-A190-3D7F-DCBF-60DD800EACB9" name="collection_bin">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<generatorID>09B9DD32-867E-6032-B958-8DE1E3968B12</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="407E27B6-7B93-567E-6A04-970EC134E838"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

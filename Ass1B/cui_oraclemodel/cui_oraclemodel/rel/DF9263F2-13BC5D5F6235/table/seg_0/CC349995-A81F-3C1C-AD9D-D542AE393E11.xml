@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CC349995-A81F-3C1C-AD9D-D542AE393E11" name="WASTE_TYPE">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 01:31:27 UTC</createdTime>
+<generatorID>3C02F359-38FF-0D53-9C5A-05357F2057AC</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="waste_type_id" id="5CE94D1E-67F1-65AE-D64E-99629435EDE7">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 01:31:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[waste type ID]]></commentInRDBMS>
+<generatorID>12F81996-F6A6-9E00-34B4-A0D28B279521</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="waste_type_desc" id="939CD260-EAC1-F456-58EE-2A46FA5D71E6">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 12:49:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[waste type description (GW - green waste, L - landfill, SR - standard recycle, G - glass)]]></commentInRDBMS>
+<generatorID>C60E11D3-AF9F-550D-5041-707183EB7322</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<constraintName>chk_waste_type_desc</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<listOfValues>
+<valueDef value="G" description="Glass"/>
+<valueDef value="GW" description="Green Waste"/>
+<valueDef value="L" description="Landfill"/>
+<valueDef value="SR" description="Standard Recycle"/>
+</listOfValues>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D82502F7-40C1-B23E-E0A9-F474CEC11031" name="WASTE_TYPE_PK">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 01:31:27 UTC</createdTime>
+<generatorID>44F9C816-DE44-E716-9190-039634A54AA5</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5CE94D1E-67F1-65AE-D64E-99629435EDE7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

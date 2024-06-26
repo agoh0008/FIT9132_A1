@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="auth_street" directorySegmentName="seg_0" id="8F638077-4C1F-55B4-9DC4-F9C9C40BF602">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-28 09:44:55 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FEC4A524-8F7D-AD0B-0590-A93A4AC1F9A4" value="true"/>
+</engineerTo>
+<sourcePk>26FB2E65-32B8-2F1A-048B-C48E2B0804DA</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>manages</nameOnSource>
+<nameOnTarget>.</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>714D97AF-22D6-4183-B8C9-C93F4BCCD65C</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>95FC747E-435E-1696-A0B9-D5773B42DBC6</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

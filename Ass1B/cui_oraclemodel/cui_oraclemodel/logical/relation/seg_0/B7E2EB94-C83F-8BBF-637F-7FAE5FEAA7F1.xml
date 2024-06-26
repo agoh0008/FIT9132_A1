@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="wastetype_bintype" directorySegmentName="seg_0" id="B7E2EB94-C83F-8BBF-637F-7FAE5FEAA7F1">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-28 13:55:46 UTC</createdTime>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<engineerTo>
+<item key="FEC4A524-8F7D-AD0B-0590-A93A4AC1F9A4" value="true"/>
+</engineerTo>
+<sourcePk>44F9C816-DE44-E716-9190-039634A54AA5</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>refers_to</nameOnSource>
+<nameOnTarget>.</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3C02F359-38FF-0D53-9C5A-05357F2057AC</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B760D6BB-CF82-0CED-D887-E6A8EB17B841</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BABFEB94-A323-5846-7E1B-BF8B91EDB562" name="PROPERTY_OWNER">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 01:31:27 UTC</createdTime>
+<generatorID>4B9D195B-6167-357D-4FC0-D1037BC6F3F9</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="owner_id" id="63663B6E-DAE4-9F11-A967-887D6089394D">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 01:31:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Owner ID]]></commentInRDBMS>
+<generatorID>38605082-6D43-72FE-0FB2-93D3F56BA850</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9A898F42-D7CD-7AED-92D7-B4531EF23DF7" referredColumn="B1FC4A4E-E342-7244-0082-E750698DBD96"/>
+</associations>
+</Column>
+<Column name="prop_id" id="FA873D1C-0058-A773-0CD2-7C264F64BD32">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 01:31:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[surrogate key of property]]></commentInRDBMS>
+<generatorID>7D97D699-FC98-5BC7-27DE-6FA4EA1BD5C9</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="94AE6504-C5A2-63F7-3498-06F1CDE2DF76" referredColumn="1CDF3E54-59E3-AE6C-7A5A-B38F4D8AC291"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="42FB9B3C-922B-604D-12DB-269396DAD808" name="PROPERTY_OWNER_PK">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 01:31:27 UTC</createdTime>
+<generatorID>EFBB1A62-53A1-789A-69C8-672F52B49558</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="63663B6E-DAE4-9F11-A967-887D6089394D"/>
+<colUsage columnID="FA873D1C-0058-A773-0CD2-7C264F64BD32"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="83D49809-8AD3-D3F2-88BF-49255B35C9A5" name="owner_prop">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 01:31:27 UTC</createdTime>
+<generatorID>2A1E4EEE-DA58-818C-9C25-4DF1734492F4</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="63663B6E-DAE4-9F11-A967-887D6089394D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="26FE9E11-6A9F-CDB7-AADF-38BC87C00D3C" name="prop_owner">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 01:31:27 UTC</createdTime>
+<generatorID>786B8EB2-5685-8F0D-50C7-28460BB47C89</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FA873D1C-0058-A773-0CD2-7C264F64BD32"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

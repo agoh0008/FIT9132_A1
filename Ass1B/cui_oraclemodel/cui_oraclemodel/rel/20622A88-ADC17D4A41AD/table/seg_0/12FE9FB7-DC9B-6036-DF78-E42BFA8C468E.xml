@@ -1,0 +1,215 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="12FE9FB7-DC9B-6036-DF78-E42BFA8C468E" name="PROPERTY">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<generatorID>551B688C-97A8-C2A4-1AD0-5D273EF90475</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="prop_id" id="FD918257-AB5F-5B98-6D3F-5F549B80D7B0">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[surrogate key of property]]></commentInRDBMS>
+<generatorID>3659C2EE-2D53-8DA2-F38D-697342EF5040</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prop_no" id="6D4E2527-B1D1-298D-3785-EC7FA7D4150A">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Property Number]]></commentInRDBMS>
+<generatorID>B2A41057-CF8D-888A-E728-781DE7238C21</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="street_id" id="72E56E51-4E7E-56E8-F1F7-8953639CEB43">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Street ID]]></commentInRDBMS>
+<generatorID>95C304EA-9C8F-21C0-B983-EA36EBFC739B</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A921278C-6E8C-9C19-BF74-5371737F39DB" referredColumn="04873BBA-FF9E-5055-EC1A-EF8ECCAD071D"/>
+</associations>
+</Column>
+<Column name="au_name" id="6B81C968-245D-1712-422C-CA0B15797C9C">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Authority Name]]></commentInRDBMS>
+<generatorID>6585ED4D-3DBE-CC37-DDED-75D6F0D4C3B7</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A921278C-6E8C-9C19-BF74-5371737F39DB" referredColumn="6D9BF7DE-68FF-836E-F371-8FA9EC881EE8"/>
+</associations>
+</Column>
+<Column name="prop_street_add" id="AF860DC6-3A6A-22EA-178B-E6FB7D9C2E8C">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Property Street Address]]></commentInRDBMS>
+<generatorID>5C88E583-DAED-D8DD-A76C-52F6AC81AA58</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prop_building_no" id="350A9A61-F01C-E9A2-3993-EE2B351451D3">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Property Building Number (apartment number, suite number, etc.) ]]></commentInRDBMS>
+<generatorID>960F1754-607C-CA5F-E6CD-7110AE141234</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prop_zip" id="B44BA787-B3AC-95BF-9324-A519A19B8699">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Property Zip]]></commentInRDBMS>
+<generatorID>231A17AF-27EE-01EA-DBC2-E9B1DFFE09C5</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4</dataTypeSize>
+<ownDataTypeParameters>4,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prop_suburb" id="40FDFD77-14FA-EB44-5ABE-A99401EAF3A8">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Property Suburb]]></commentInRDBMS>
+<generatorID>639FB93A-507C-E4AC-DBB7-7E251F737386</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prop_state" id="3293D186-7C77-B4D8-62FC-26481DD10B1D">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Property State]]></commentInRDBMS>
+<generatorID>A1D4DF93-72E5-B20D-ADB7-C251A4A49AB5</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prop_value" id="60542E61-77E7-BB1A-C315-42953F543918">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Property Value]]></commentInRDBMS>
+<generatorID>56224DCA-10A5-1F39-22BE-E769DC9F8845</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prop_yearbuilt" id="0120A290-AC6C-B5A9-C6E6-9740C050F706">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[year property is built]]></commentInRDBMS>
+<generatorID>EF2BFFF6-086C-5771-B42A-5F6F7FDEB0D0</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prop_fullyfurnished" id="70FF9E3C-6B1A-3E68-F0C5-E22C00B0E475">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[Whether Property is Fully Furnished or Not]]></commentInRDBMS>
+<generatorID>FDF4B330-1D79-793F-F5B9-ED95DAD3E148</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F1559371-EBC2-6D21-A928-88C03CA63E12" name="PROPERTY_PK">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<generatorID>21E0097E-92FD-BACF-A740-5504E1F275FA</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FD918257-AB5F-5B98-6D3F-5F549B80D7B0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BCBF76C5-B5B7-BB0D-6B99-B41E0CC04539" name="PROPERTY_NK">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<generatorID>F929E42B-91CE-4141-FD6C-6FAB66D7E79F</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D4E2527-B1D1-298D-3785-EC7FA7D4150A"/>
+<colUsage columnID="72E56E51-4E7E-56E8-F1F7-8953639CEB43"/>
+<colUsage columnID="6B81C968-245D-1712-422C-CA0B15797C9C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7352C29D-7D6D-2AEB-15D7-1B15C54F209F" name="street_prop">
+<createdBy>Alexandra Goh</createdBy>
+<createdTime>2023-04-29 00:20:06 UTC</createdTime>
+<generatorID>405758D0-F738-C225-9316-4CC2D35F95D9</generatorID>
+<ownerDesignName>cui_oraclemodel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="72E56E51-4E7E-56E8-F1F7-8953639CEB43"/>
+<colUsage columnID="6B81C968-245D-1712-422C-CA0B15797C9C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
